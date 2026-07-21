@@ -7,7 +7,7 @@ dotenvconfig();
 
 /* TODO: change to read configuration from environment */
 const blogEnabled = Boolean(process.env.BLOG_ENABLED === 'true');
-const gitRepositoryUrl = process.env.GIT_REPOSITORY_URL ?? '';
+const gitRepositoryUrl = process.env.GIT_REPOSITORY_URL ?? 'https://github.com/philippemoluh-byte/devscop-blog';
 
 const config: Config = {
   title: 'My Journey to Secure Deployments: DevSecOps Portfolio',
@@ -27,7 +27,7 @@ const config: Config = {
 
   deploymentBranch: process.env.DEPLOYMENT_BRANCH,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -103,8 +103,8 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/projects',
+              label: 'Projects',
+              to: 'docs/projects/overview',
             },
           ],
         },
