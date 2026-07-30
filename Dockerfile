@@ -1,17 +1,22 @@
-FROM node:20.16-alpine as builder
+FROM node:20.16-alpine AS builder
 
 WORKDIR /app
 
 ARG BLOG_ENABLED=false
-ARG DEPLOYMENT_URL="https://spmse.github.io"
+ARG DEPLOYMENT_URL="https://philippemoluh-byte.github.io"
 ARG DEPLOYMENT_BRANCH="main"
-ARG GITHUB_ORG="spmse"
-ARG GITHUB_PROJECT="dev-blog-template"
+ARG GITHUB_ORG="philippemoluh-byte"
+ARG GITHUB_PROJECT="devscop-blog"
 
-COPY . $WORKDIR
+COPY package*.json ./
 
-RUN npm install && npm run build
+# Clean npm cache and install dependencies
+RUN npm cache clean --force && npm install
 
-FROM nginx:latest as runner
+COPY . /app
+
+RUN npm run build
+
+FROM nginx:latest AS runner
 
 COPY --from=builder /app/build /usr/share/nginx/html

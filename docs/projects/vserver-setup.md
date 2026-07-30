@@ -10,8 +10,8 @@ This page documents how I configured my very first cloud server instance in the 
 import GithubLinkAdmonition from '@site/src/components/GithubLinkAdmonition';
 
 <GithubLinkAdmonition 
-    link="https://github.com/spmse/dev-blog-template"
-    title="Github Tip" 
+    link="https://github.com/philippemoluh-byte/v-server-setup"
+    title="Github Tip"
     type="tip"
 />
 
