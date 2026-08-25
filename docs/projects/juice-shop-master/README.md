@@ -46,10 +46,6 @@ Make sure OWASP Juice Shop is running by opening Firefox and navigating to:
 http://127.0.0.1:3000
 ```
 
-> **Note:** Juice Shop is an intentionally vulnerable application and should only be used for training and testing purposes in an isolated environment.
-
----
-
 ## Challenge Overview
 
 ### 1. GDPR Data Erasure Challenge
