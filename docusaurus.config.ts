@@ -3,8 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import {config as dotenvconfig}  from "dotenv";
 
-dotenvconfig();
-
+dotenvconfig()
 /* TODO: change to read configuration from environment */
 const blogEnabled = Boolean(process.env.BLOG_ENABLED === 'true');
 const gitRepositoryUrl = process.env.GIT_REPOSITORY_URL ?? 'https://github.com/philippemoluh-byte/devscop-blog';
@@ -75,54 +74,24 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'DevSecOps Journal',
+      title: '',
       logo: {
-        alt: 'My Site Logo',
+        alt: '',
         src: 'img/logo.svg',
       },
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Docs',
-        },
-        {
-          href: gitRepositoryUrl,
-          label: 'Github',
-          position: 'right',
-        },
-      ],
+      items: [],
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Projects',
-              to: 'docs/projects/overview',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'GitHub',
-              href: gitRepositoryUrl,
-            },
-            {
-              label: 'Template',
-              href: 'https://github.com/Developer-Akademie-DevSecOpsKurs/dev-blog-template',
-            }
-          ],
-        },
-      ],
-        copyright: `Copyright © ${new Date().getFullYear()} Philippe Moluh (philippemoluh-byte). Built with Docusaurus and 💚, extended from the developer-akademie-starter.`,
+      links: [],
+        copyright: `© ${new Date().getFullYear()} Philippe Moluh. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
@@ -144,18 +113,5 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 };
 
-
-if (blogEnabled && config.themeConfig) {
-  (config.themeConfig.navbar as any).items.push({to: '/blog', label: 'Blog', position: 'left'});
-  const footerLinks = (config.themeConfig.footer as any).links;
-  const moreColumn = footerLinks.find((link: any) => link.title === 'More');
-
-  if (moreColumn?.items) {
-    moreColumn.items.push({
-      to: '/blog',
-      label: 'Blog',
-    });
-  }
-}
 
 export default config;

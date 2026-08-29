@@ -10,8 +10,11 @@
 
 ## Description
 
-> **Note:** Juice Shop is an intentionally vulnerable application that must only be operated for training and testing purposes in an isolated environment.
+:::warning
 
+**Note:** Juice Shop is an intentionally vulnerable application that must only be operated for training and testing purposes in an isolated environment.
+
+:::
 
 ### Vulnerability Analysis
 
@@ -64,7 +67,7 @@ Click one of the listed files to download it, or view it directly in the browser
 
 Simply opening or accessing any log file from this directory is enough for Juice Shop to mark the challenge as solved (indicated by a green checkmark next to "Access Log" on the Score Board).
 
-![Challenge solved](./images/challenge-solved.png)
+![Index solved](./images/challenge-solved.png)
 
 ---
 

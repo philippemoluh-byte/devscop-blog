@@ -1,0 +1,542 @@
+.section {
+    background-color: #266ad9;
+    padding: 72px 0;
+    color: #ffffff;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.title {
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0 0 32px 0;
+}
+
+.content {
+    display: flex;
+    gap: 64px;
+    width: 100%;
+}
+
+.nav {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navItem {
+    background: none;
+    border: none;
+    font-family: var(--font-quick);
+    margin-bottom: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #FFFFFF;
+    border-radius: 12px;
+    padding: 8px 12px;
+    font-size: 24px;
+    text-align: left;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.navItem:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.navItem.active {
+    color: #262E34;
+    font-weight: 600;
+}
+
+.more {
+    font-size: 24px;
+    font-family: var(--font-quick);
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: 24px;
+    color: #FFFFFF !important;
+    display: inline-block;
+}
+
+.more:hover {
+    font-weight: 600;
+    text-decoration: underline;
+    color: #FFFFFF !important;
+}
+
+.card {
+    flex: 1;
+    background-color: #2f4563;
+    border-radius: 30px;
+    padding: 32px;
+    display: flex;
+    gap: 32px;
+}
+
+/* LEFT */
+.cardLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+.cardTitle {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.imageBlock {
+    width: 355px;
+    height: 240px;
+}
+
+.projectImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+/* RIGHT */
+.cardRight {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+.tags {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.skillTag {
+    display: inline-flex;
+    width: 122.5px;
+    height: 44px;
+    align-items: center;
+    gap: 6px;
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.skillIcon {
+    width: 32px;
+    height: 32px;
+}
+
+.skillText {
+    font-size: 14px;
+    color: #262e34;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 20px;
+}
+
+.actions {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* PRIMARY BUTTON */
+.primary {
+    background-color: #266ad9;
+    color: #ffffff;
+
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--font-quick);
+
+    height: 52px;
+    width: 188px;
+    border-radius: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 18px;
+    flex: 1 1 auto;
+    min-width: 0;
+
+    white-space: nowrap;
+}
+
+.secondary {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--font-quick);
+
+    height: 52px;
+    width: 105;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 14px;
+    flex: 0.7 1 auto;
+    min-width: 0;
+
+    white-space: nowrap;
+}
+
+
+
+.projectsMobile {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .projectImage {
+        width: 100%;
+        height: auto;
+        width: 320px;
+        height: 216px;
+        border-radius: 30px;
+        object-fit: contain;
+    }
+
+
+    .title {
+        font-size: 48px;
+        font-weight: 700;
+        margin: 0 0 32px 0;
+    }
+
+    .cardLeft {
+        order: 1;
+    }
+
+    .cardRight {
+        order: 2;
+    }
+
+    .tags {
+        order: 2;
+    }
+
+    .imageBlock {
+        order: 3;
+        width: 100%;
+        height: auto;
+    }
+
+    .projectImage {
+        width: 100%;
+        height: auto;
+        width: 320px;
+        height: 216px;
+        border-radius: 30px;
+    }
+
+    .description {
+        order: 4;
+    }
+
+    .actions {
+        order: 5;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        display: none;
+    }
+
+    .projectImage {
+        object-fit: contain;
+    }
+
+    .title {
+        font-size: 48px;
+        font-weight: 700;
+        margin: 0 0 32px 0;
+    }
+
+    .projectsMobile {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 364px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .cardLeft {
+        order: 1;
+    }
+
+    .cardRight {
+        order: 2;
+    }
+
+    .cardTitle {
+        font-size: 32px;
+    }
+
+    .tags {
+        order: 2;
+    }
+
+    .imageBlock {
+        order: 3;
+        width: 100%;
+        height: auto;
+    }
+
+    .description {
+        order: 4;
+        font-size: 16px;
+    }
+
+    .actions {
+        order: 5;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.primary:hover,
+.secondary:hover {
+    text-decoration: none !important;
+    color: #ffffff !important;
+    font-size: 20;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardLeft {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardRight {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardTitle {
+        order: 1;
+    }
+
+    .tags {
+        order: 2;
+        margin-top: 8px;
+    }
+
+    .imageBlock {
+        order: 3;
+    }
+
+    .description {
+        order: 4;
+    }
+
+    .actions {
+        order: 5;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .cardLeft,
+    .cardRight {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardTitle {
+        order: 1;
+    }
+
+    .tags {
+        order: 2;
+        margin-top: 6px;
+    }
+
+    .imageBlock {
+        order: 3;
+    }
+
+    .description {
+        order: 4;
+    }
+
+    .actions {
+        order: 5;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.primary:hover {
+    background-color: #5696FF;
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
+.secondary:hover {
+    background-color: rgba(255, 255, 255, 0.16);
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardLeft {
+        display: contents;
+    }
+
+    .cardRight {
+        display: contents;
+    }
+
+    .cardTitle {
+        order: 1;
+    }
+
+    .tags {
+        order: 2;
+        margin-top: 8px;
+    }
+
+    .imageBlock {
+        order: 3;
+    }
+
+    .description {
+        order: 4;
+    }
+
+    .actions {
+        order: 5;
+        justify-content: center;
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .more {
+        text-align: center;
+        align-self: center;
+        width: 100%;
+        display: block;
+        font-family: var(--font-quick);
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 768px) {
+    .more {
+        text-align: center;
+        align-self: center;
+        width: 100%;
+        display: block;
+        font-family: var(--font-quick);
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .primary,
+    .secondary {
+        width: fit-content;
+        max-width: 100%;
+
+        font-size: clamp(14px, 3.2vw, 20px);
+        padding: 12px clamp(14px, 3vw, 22px);
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        flex-shrink: 1;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .primary,
+    .secondary {
+        width: fit-content;
+        max-width: 100%;
+
+        font-size: clamp(13px, 4vw, 18px);
+        padding: 12px clamp(12px, 3vw, 20px);
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        flex-shrink: 1;
+    }
+
+    .actions {
+        gap: 8px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    :global(.contentContainer) {
+        padding-left: 13px !important;
+        padding-right: 13px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    :global(.contentContainer) {
+        padding-left: 13px !important;
+        padding-right: 13px !important;
+    }
+}

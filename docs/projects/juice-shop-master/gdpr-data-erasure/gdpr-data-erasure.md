@@ -10,8 +10,11 @@
 
 
 ## Description
+:::warning
 
-> **Note:** Juice Shop is an intentionally vulnerable application that must only be operated for training and testing purposes in an isolated environment.
+**Note:** Juice Shop is an intentionally vulnerable application that must only be operated for training and testing purposes in an isolated environment.
+
+:::
 
 ### Vulnerability Analysis
 

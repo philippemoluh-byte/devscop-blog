@@ -1,14 +1,14 @@
 # OWASP Juice Shop Master Project
 
-The OWASP Juice Shop project documentation has been expanded with detailed descriptions, objectives, and mitigation steps for a range of challenges. These additions provide clear instructions and explanations for challenges such as the "GDPR Data Erasure Challenge," "Forgotten Developer Backup," and "Access Log," turning this documentation into a comprehensive resource for learning about web application security and ethical hacking techniques.
+The OWASP Juice Shop project documentation has been expanded with detailed descriptions, objectives, and mitigation steps for a range of challenges. These additions provide clear instructions and explanations for challenges such as the "GDPR Data Erasure Index," "Forgotten Developer Backup," and "Access Log," turning this documentation into a comprehensive resource for learning about web application security and ethical hacking techniques.
 
 ## Table of Contents
 
 - [OWASP Juice Shop Master Project](#owasp-juice-shop-master-project)
     - [Prerequisites](#prerequisites)
     - [Quickstart](#quickstart)
-    - [Challenge Overview](#challenge-overview)
-        - [1. GDPR Data Erasure Challenge](#1-gdpr-data-erasure-challenge)
+    - [Index Overview](#challenge-overview)
+        - [1. GDPR Data Erasure Index](#1-gdpr-data-erasure-challenge)
         - [2. Forgotten Developer Backup](#2-forgotten-developer-backup)
         - [3. Access Log](#3-access-log)
     - [Disclaimer](#disclaimer)
@@ -46,9 +46,9 @@ Make sure OWASP Juice Shop is running by opening Firefox and navigating to:
 http://127.0.0.1:3000
 ```
 
-## Challenge Overview
+## Index Overview
 
-### 1. GDPR Data Erasure Challenge
+### 1. GDPR Data Erasure Index
 
 | Field | Value |
 |---|---|
@@ -92,5 +92,8 @@ Loom Video: [Access Log Video](https://www.loom.com/share/56cb27c844cb448aaca8c0
 Details: [See Access Log doc](./access-log/access-log.md)
 
 ## Disclaimer
+:::danger
 
 OWASP Juice Shop is an intentionally vulnerable application created for educational purposes. It should only be used in a controlled environment for learning about web application security and ethical hacking techniques.
+
+:::

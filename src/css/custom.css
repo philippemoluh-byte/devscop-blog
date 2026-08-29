@@ -1,10 +1,5 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Reddit+Sans:wght@300;400;500;600;700&display=swap");
 
-/* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -15,6 +10,11 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --font-quick: "Quicksand", sans-serif;
+  --font-red: "Reddit Sans", sans-serif;
+
+  --site-bg: #242b31;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -28,3 +28,109 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: var(--site-bg);
+  font-family: var(--font-red);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-quick);
+}
+
+/*#__docusaurus,*/
+/*.main-wrapper,*/
+/*.main-wrapper>main {*/
+/*  background: transparent !important;*/
+/*}*/
+
+/*section#about {*/
+/*  margin-top: 0 !important;*/
+/*}*/
+
+.navbar {
+  display: none;
+  height: 0;
+  overflow: hidden;
+}
+
+footer.footer {
+  display: none;
+}
+
+.main-wrapper {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.main-wrapper>main {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.main-wrapper>main>*:first-child {
+  margin-top: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  border: none ;
+  box-shadow: none;
+}
+
+.contentContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 120px;
+  padding-right: 120px;
+  box-sizing: border-box;
+}
+
+/*@media (max-width: 1440px) {*/
+/*  .contentContainer {*/
+/*    padding-left: 80px;*/
+/*    padding-right: 80px;*/
+/*  }*/
+/*}*/
+
+/*@media (max-width: 1024px) {*/
+/*  .contentContainer {*/
+/*    padding-left: 40px;*/
+/*    padding-right: 40px;*/
+/*  }*/
+/*}*/
+
+/*.hero {*/
+/*  margin-top: 0 !important;*/
+/*  padding-top: 140px;*/
+/*}*/
+
+/*@media (max-width: 1024px) {*/
+/*  .hero {*/
+/*    padding-top: 110px !important;*/
+/*  }*/
+/*}*/
+
+/*@media (max-width: 768px) {*/
+/*  .hero {*/
+/*    padding-top: 96px !important;*/
+/*  }*/
+/*}*/
+
+/*.main-wrapper>main::before {*/
+/*  content: none !important;*/
+/*  display: none !important;*/
+/*}*/

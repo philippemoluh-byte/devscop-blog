@@ -11,7 +11,11 @@
 
 ## Description
 
-> **Note:** Juice Shop is an intentionally vulnerable application that must only be operated for training and testing purposes in an isolated environment.
+:::warning
+
+**Note:** Juice Shop is an intentionally vulnerable application that must only be operated for training and testing purposes in an isolated environment.
+
+:::
 
 ### Vulnerability Analysis
 
@@ -82,7 +86,7 @@ The browser downloads the file `package.json.bak`. It contains the complete depe
 
 The challenge indicator in Juice Shop (Score Board / green checkmark for "Forgotten Developer Backup") confirms successful completion.
 
-![Challenge completed](./images/challenge-completed.png)
+![Index completed](./images/challenge-completed.png)
 
 > **Note:** The same technique also works analogously for other challenges in the `/ftp` directory of Juice Shop (e.g., "Forgotten Sales Backup" using `coupons_2013.md.bak%00.md`, or "Easter Egg" using `eastere.gg%00.md`), since all of these endpoints share the same flawed validation logic.
 
