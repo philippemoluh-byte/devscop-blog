@@ -17,14 +17,14 @@ const config: Config = {
   url: process.env.DEPLOYMENT_URL ?? "https://philippemoluh-byte.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: process.env.BASE_URL ?? "/",
+  baseUrl: process.env.BASE_URL ?? "/devscop-blog/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: process.env.GITHUB_ORG, // Usually your GitHub org/user name.
-  projectName: process.env.GITHUB_PROJECT, // Usually your repo name.
+  organizationName: process.env.GITHUB_ORG ?? 'philippemoluh-byte', // Usually your GitHub org/user name.
+  projectName: process.env.GITHUB_PROJECT ?? '/devscop-blog/', // Usually your repo name.
 
-  deploymentBranch: process.env.DEPLOYMENT_BRANCH,
+  deploymentBranch: process.env.DEPLOYMENT_BRANCH ?? 'gh-pages',
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',

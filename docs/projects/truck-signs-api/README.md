@@ -13,8 +13,6 @@ The store also allows clients to upload their own designs and customize them dir
 
 ## Table of Contents
 
-- [Signs for Trucks](#signs-for-trucks)
-  - [Table of Contents](#table-of-contents)
   - [Prerequisites](#prerequisites)
   - [Quickstart](#quickstart)
     - [Local Setup (without Docker)](#local-setup-without-docker)
@@ -24,7 +22,6 @@ The store also allows clients to upload their own designs and customize them dir
     - [Creating a Superuser](#creating-a-superuser)
     - [Models](#models)
     - [Brief Explanation of the Views](#brief-explanation-of-the-views)
-  - [Project Structure](#project-structure)
   - [Screenshots of the Django Backend Admin Panel](#screenshots-of-the-django-backend-admin-panel)
     - [Mobile View](#mobile-view)
     - [Desktop View](#desktop-view)
@@ -110,7 +107,7 @@ Then start the container:
 docker run --env-file .env -d -p 8000:8000 --name truck-signs-api truck-signs-api
 ```
 
-The app should then be reachable at [localhost:8000](http://localhost:8000).
+The app should then be reachable at localhost port 8000.
 
 ## Usage
 

@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import { SkillsData } from "../data/skills.data";
 import type { Skill } from "../types";

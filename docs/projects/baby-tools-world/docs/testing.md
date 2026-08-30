@@ -4,19 +4,6 @@ This project contains tests for the corresponding apps in the respective package
 Tests in Django can either be located in a `tests.py` file within a django-app, or you could also have a module named `tests` (essentially a folder with an `__init__.py` file).
 The django testrunner will by default discover tests by finding all python files that contain the word `test` in their name, e.g. `test.py`, `test_model.py`, or similar.
 
-Example Structure:
-
-```console
-baby-tool-world/src/products
-├───management
-├───migrations
-├───templates
-└───tests <-- this is the module
-      ├───__init__.py
-      ├───test_category_model.py <-- this is a test file
-      └───test_category_model.py <-- this is a test file too
-```
-
 ## Important terms
 
 | **Term**    | **Description** | **Example (products app)** |
@@ -36,7 +23,7 @@ To run the tests with the `django testrunner` you can use the following command:
 
 **Full command example**
 
-This example assumes you have activated your virtual env and already have installed the project dependencies, see [here](#quickstart)
+This example assumes you have activated your virtual env and already have installed the project dependencies.
 
 ```bash
 cd src

@@ -19,4 +19,4 @@ RUN npm run build
 
 FROM nginx:latest AS runner
 
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=builder /app/build /usr/share/nginx/html/devscop-blog

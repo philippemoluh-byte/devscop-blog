@@ -108,7 +108,7 @@ Run the development server:
 python manage.py runserver
 ```
 
-Open [http://localhost:8000](http://localhost:8000) in your browser.
+Open your_local_host:8000 in your browser.
 
 Optionally, create an admin user:
 

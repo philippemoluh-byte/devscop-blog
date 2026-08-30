@@ -4,13 +4,12 @@ The OWASP Juice Shop project documentation has been expanded with detailed descr
 
 ## Table of Contents
 
-- [OWASP Juice Shop Master Project](#owasp-juice-shop-master-project)
     - [Prerequisites](#prerequisites)
     - [Quickstart](#quickstart)
-    - [Index Overview](#challenge-overview)
-        - [1. GDPR Data Erasure Index](#1-gdpr-data-erasure-challenge)
-        - [2. Forgotten Developer Backup](#2-forgotten-developer-backup)
-        - [3. Access Log](#3-access-log)
+    - [Challenge Overview](#challenge-overview)
+        - [GDPR Data Erasure Index](#gdpr-data-erasure-index)
+        - [Forgotten Developer Backup](#forgotten-developer-backup)
+        - [Access Log](#access-log)
     - [Disclaimer](#disclaimer)
 
 ## Prerequisites
@@ -43,12 +42,12 @@ npm start
 Make sure OWASP Juice Shop is running by opening Firefox and navigating to:
 
 ```
-http://127.0.0.1:3000
+<your-local-host:3000>
 ```
 
-## Index Overview
+## Challenge Overview
 
-### 1. GDPR Data Erasure Index
+### GDPR Data Erasure Index
 
 | Field | Value |
 |---|---|
@@ -62,7 +61,7 @@ This challenge tests whether Juice Shop's login logic is vulnerable to SQL injec
 Loom Video: [GDPR Data Erasure Video](https://www.loom.com/share/cbd57c72bd5240a9ba40137db4c045f4)
 Details: [See GDPR Data Erasure doc](./gdpr-data-erasure/gdpr-data-erasure.md)
 
-### 2. Forgotten Developer Backup
+### Forgotten Developer Backup
 
 | Field | Value |
 |---|---|
@@ -76,7 +75,7 @@ This challenge tests whether a server-side file type whitelist can be bypassed u
 Loom Video: [Forgotten Developer Backup Video](https://www.loom.com/share/f31fc1c5ee964cdaa34b5872e0b1a2e7)
 Details: [See Forgotten Developer Backup doc](./forgotten-developer-backup/forgotten-developer-backup.md)
 
-### 3. Access Log
+### Access Log
 
 | Field | Value |
 |---|---|

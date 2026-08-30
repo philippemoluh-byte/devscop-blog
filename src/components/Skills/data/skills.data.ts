@@ -33,18 +33,29 @@ export const SkillsData: Skill[] = [
     },
     {
         name: "Angular",
-        icon: "/img/portfolio/icons/Angular_shield_icon.png",
+        icon: "/img/portfolio/icons/angular_shield_icon.png",
         items: [
-            "Static site generation",
-            "Tags & categories",
-            "RSS & SEO",
-            "Localization",
+            "Building dynamic single-page apps",
+            "Interactive web UIs with Angular",
+            "Building responsive web apps"],
+    },
+    {
+        name: "React",
+        icon: "/img/portfolio/icons/react-icon.png",
+        items: [
+            "Building interactive UI components",
+            "Efficient virtual DOM rendering",
+            "DOM manipulation made declarative",
         ],
     },
     {
         name: "Spring Boot",
         icon: "/img/portfolio/icons/springboot_shield_icon.png",
-        items: ["Java and simple backend logic"],
+        items: [
+            "Scalable REST APIs in Java",
+            "Fast, reliable enterprise backends",
+            "Java framework for microservices"
+        ],
     },
     {
         name: "Python",
@@ -67,6 +78,11 @@ export const SkillsData: Skill[] = [
         items: ["Docker containers"],
     },
     {
+        name: "Kubernetes",
+        icon: "/img/portfolio/icons/kubernetes-icon.png",
+        items: ["Orchestrating Docker container clusters"],
+    },
+    {
         name: "CI/CD",
         icon: "/img/portfolio/icons/cicd.png",
         items: ["GitHub Actions pipelines"],
@@ -75,5 +91,22 @@ export const SkillsData: Skill[] = [
         name: "IT Security",
         icon: "/img/portfolio/icons/security.png",
         items: ["OWASP Juice Shop practice"],
+    },
+    {
+        name: "Kali Linux",
+        icon: "/img/portfolio/icons/kali-linux-icon.png",
+        items: [
+            "Penetration testing with Kali",
+            "Vulnerability analysis",
+            "Security assessment",
+        ],
+    },
+    {
+        name: "OWASP",
+        icon: "/img/portfolio/icons/owasp-icon.png",
+        items: [
+            "Identifying common web vulnerabilities",
+            "Practicing secure coding standards"
+        ],
     },
 ];

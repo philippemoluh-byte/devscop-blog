@@ -122,7 +122,7 @@ docker compose logs frontend > frontend-logs.txt
 ## Deployment
 
 Deployments to the cloud VM are fully automated through a GitHub Actions workflow defined in
-[`.github/workflows/deployment.yaml`](.github/workflows/deployment.yaml). It builds the frontend and
+[`.github/workflows/deployment.yaml`](https://github.com/philippemoluh-byte/conduit-container/blob/main/.github/workflows/deployment.yaml). It builds the frontend and
 backend images, syncs the deployment configuration, and rolls everything out to the VM over SSH — no
 manual file editing or `docker compose up` on the server is needed for a normal release.
 

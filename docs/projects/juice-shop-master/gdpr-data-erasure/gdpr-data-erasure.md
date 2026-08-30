@@ -6,7 +6,7 @@
     - [Vulnerability Analysis](#vulnerability-analysis)
     - [Exploitation – Step by Step](#exploitation--step-by-step)
     - [Mitigation / Fix](#mitigation--fix)
-- [References](#references)
+- [Further References](#further-references)
 
 
 ## Description
@@ -37,7 +37,7 @@ The specific challenge here is that the attacker does not know Chris's exact ema
 
 **1. Open the Login Page**
 
-Navigate to `http://127.0.0.1:3000/#/login`.
+Navigate to `<your-local-host:3000/#/login>`.
 
 ![Login Page](./images/navigation-to-login.png)
 
