@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkdso_dev_blog||=[]).push([[984],{9906(o){o.exports=JSON.parse('{"metadata":{"permalink":"/devscop-blog/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":0,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

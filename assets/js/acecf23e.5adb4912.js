@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdso_dev_blog||=[]).push([[1903],{1912(o){o.exports=JSON.parse('{"blogBasePath":"/devscop-blog/blog","blogTitle":"Blog","authorsListPath":"/devscop-blog/blog/authors"}')}}]);
