@@ -1,0 +1,17 @@
+import React from "react";
+//import LinkedInIconSvg from "../../../../static/img/portfolio/icons/LinkedInIcon.svg";
+import LinkedInIconSvg from "@site/static/img/portfolio/icons/LinkedInIcon.svg";
+
+export default function LinkedInIcon() {
+    return (<svg width="23" height="28" viewBox="-2 -2 28 28" fill="none">
+        <g transform="translate(1.2, -0.8)">
+            <path
+                d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM.22 8h4.56v14H.22V8ZM7.1 8h4.38v1.91h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.48 3.04 5.48 6.99V22h-4.56v-6.66c0-1.59-.03-3.64-2.22-3.64-2.22 0-2.56 1.73-2.56 3.52V22H7.1V8Z"
+                stroke="white"
+                strokeWidth="1"
+                fill="none"
+                strokeLinejoin="miter"
+            />
+        </g>
+    </svg>);
+}

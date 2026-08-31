@@ -1,0 +1,24 @@
+import React from "react";
+//import MailIconSvg from "../../../../static/img/portfolio/icons/MailIcon.svg";
+import MailIconSvg from "../../../../static/img/portfolio/icons/MailIcon.svg";
+
+export default function MailIcon() {
+    return (<svg width="23" height="18" viewBox="0 0 23 18" fill="none">
+        <rect
+            x="0.5"
+            y="0.5"
+            width="22"
+            height="17"
+            rx="2"
+            stroke="white"
+            strokeWidth="1"
+        />
+        <path
+            d="M0.5 3.5L11.5 11L22.5 3.5"
+            stroke="white"
+            strokeWidth="1"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+    </svg>);
+}
