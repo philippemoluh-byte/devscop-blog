@@ -1,0 +1,26 @@
+<svg width="260" height="260" viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Kubernetes-inspiriertes Icon</title>
+<g transform="translate(130,130)">
+  <path d="M-70,-90 L70,-90 L70,60 L0,90 L-70,60 Z" fill="#326CE5"/>
+  <path d="M70,60 L70,30 L40,30 Z" fill="#2954B5"/>
+  <g fill="#ffffff">
+    <circle cx="0" cy="-14" r="14"/>
+    <g stroke="#ffffff" stroke-width="7" stroke-linecap="round">
+      <line x1="0" y1="-14" x2="0" y2="-58"/>
+      <line x1="0" y1="-14" x2="38" y2="-36"/>
+      <line x1="0" y1="-14" x2="46" y2="6"/>
+      <line x1="0" y1="-14" x2="24" y2="46"/>
+      <line x1="0" y1="-14" x2="-24" y2="46"/>
+      <line x1="0" y1="-14" x2="-46" y2="6"/>
+      <line x1="0" y1="-14" x2="-38" y2="-36"/>
+    </g>
+    <circle cx="0" cy="-58" r="7"/>
+    <circle cx="38" cy="-36" r="7"/>
+    <circle cx="46" cy="6" r="7"/>
+    <circle cx="24" cy="46" r="7"/>
+    <circle cx="-24" cy="46" r="7"/>
+    <circle cx="-46" cy="6" r="7"/>
+    <circle cx="-38" cy="-36" r="7"/>
+  </g>
+</g>
+</svg>
