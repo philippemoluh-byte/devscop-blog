@@ -8,7 +8,6 @@ This repository contains a Docusaurus-based DevSecOps portfolio and learning jou
 
 ## Table of Contents
 
-- [My Developer Blog](#my-developer-blog)
    - [Repository Description](#repository-description)
    - [Table of Contents](#table-of-contents)
    - [Quickstart](#quickstart)
