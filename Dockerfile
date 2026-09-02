@@ -2,7 +2,7 @@ FROM node:20.16-alpine AS builder
 
 WORKDIR /app
 
-ARG BLOG_ENABLED=false
+ARG BLOG_ENABLED=true
 ARG DEPLOYMENT_URL="https://philippemoluh-byte.github.io"
 ARG DEPLOYMENT_BRANCH="main"
 ARG GITHUB_ORG="philippemoluh-byte"

@@ -1,12 +1,22 @@
 import {themes as prismThemes} from 'prism-react-renderer';
+import path from 'path';
+import {fileURLToPath} from 'url';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import {config as dotenvconfig}  from "dotenv";
 
-dotenvconfig()
+
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+const dotenvResult = dotenvconfig({
+  path: path.resolve(__dirname, '.env'),
+  override: true,
+});
 /* TODO: change to read configuration from environment */
 const blogEnabled = Boolean(process.env.BLOG_ENABLED === 'true');
 const gitRepositoryUrl = process.env.GIT_REPOSITORY_URL ?? 'https://github.com/philippemoluh-byte/devscop-blog';
+
 
 const config: Config = {
   title: 'My Journey to Secure Deployments: DevSecOps Portfolio',
@@ -28,6 +38,7 @@ const config: Config = {
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
