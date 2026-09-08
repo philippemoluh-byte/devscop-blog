@@ -11,6 +11,6 @@ export const HERO_CONTENT: HeroContent = {
     ],
     ctaLabel: "Contact me",
     ctaHref: "#contact",
-    imagePath: "/img/portfolio/philippe.png",
+    imagePath: "/img/portfolio/philippe2.png",
     imageAlt: "Profile",
 };
