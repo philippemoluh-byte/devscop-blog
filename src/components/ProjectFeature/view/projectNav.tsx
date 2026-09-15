@@ -30,7 +30,7 @@ export default function ProjectNav({
             ))}
 
             <Link to="/docs/projects/overview" className={styles.more}>
-                → see more projects
+                Navigate to all projects
             </Link>
         </nav>
     );

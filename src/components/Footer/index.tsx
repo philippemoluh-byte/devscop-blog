@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
                 />
 
                 <div className={styles.footerInfo}>
-                    <p className={styles.footerCopy}>© Philippe 2025</p>
+                    <p className={styles.footerCopy}>© Philippe {(new Date().getFullYear())}</p>
 
                     <Link to="/docs/impressum" className={styles.footerLegal}>
                         Legal notice
